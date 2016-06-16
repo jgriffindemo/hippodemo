@@ -1,0 +1,273 @@
+/* Download the 'Lato' font we'll use by default. */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+/* Site-wide defaults. */
+#main {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+
+#main h1 {
+  font-weight: 400;
+}
+
+#main h3 {
+  font-weight: 400;
+}
+
+/* General class for text inputs. */
+.ui_input {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-size: 40px;
+  width: 40%;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+
+/* Username input on the index page. */
+#username_box {
+  border-bottom: 1px grey dotted;
+}
+
+/* General UI button class. */
+.ui_button {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 30px;
+  border: 0px;
+  box-shadow: 1px 1px 0px #404040;
+  border-radius: 3px;
+  padding: 0.6%;
+  outline: none;
+}
+
+.ui_button:hover {
+  outline: none;
+}
+
+.ui_button:active {
+  outline: none;
+}
+
+/* 'Continue' button on the index page. */
+#submit_button {
+  background: #EE3754 url('../img/login_white.png') no-repeat 95% 55%;
+  color: white;
+  padding-right: 40px;
+}
+#submit_button:hover {
+  background: #DC0B2C url('../img/login_white.png') no-repeat 95% 55%;
+}
+
+/* Button that creates a user on the create user page. */
+#accept_button {
+  background: #3FCE30 url('../img/confirm_icon.png') no-repeat 95% 55%;
+  color: white;
+  padding-right: 40px;
+}
+#accept_button:hover {
+  background: #1ABF09 url('../img/confirm_icon.png') no-repeat 95% 55%;
+}
+
+/* Button that returns a user to the main page on the create user page. */
+#cancel_button {
+  background: #161616 url('../img/cancel_icon.png') no-repeat 97% 55%;
+  color: white;
+  padding-right: 50px;
+}
+#cancel_button:hover {
+  background: #030202 url('../img/cancel_icon.png') no-repeat 97% 55%;
+}
+
+#return_link {
+  text-align: left;
+}
+#return_link a {
+  color: #EE3754;
+  font-size: 20px;
+}
+
+#weather_main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 90%;
+}
+
+/* Styling for the weather panel. */
+#weather_main #weather_box {
+  color: black;
+  float: left;
+  width: 75%;
+  height: 400px;
+}
+
+/* Styling for the location selection box and corresponding menu. */
+#weather_main #locations_box {
+  float: right;
+  width: 25%;
+  text-align: right;
+  font-size: 17px;
+  height: 500px;
+  overflow: auto;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px dotted grey;
+  box-sizing: border-box;
+
+}
+#weather_main #locations_menu {
+  list-style: none;
+  height: 100%;
+  margin: 0px;
+  padding: 1%;
+}
+
+#weather_main #locations_menu li {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#weather_main #locations_menu li:hover {
+  background: #fde8eb;
+}
+
+#weather_main #locations_menu li a {
+  display: block;
+  color: #EE3754;
+  text-decoration: none;
+}
+
+#weather_main #locations_menu li a:hover {
+  color: #DC0B2C;
+}
+
+#weather_main #locations_menu li .delete_icon {
+  float: left;
+  display: block;
+  visibility: hidden;
+  height: 16px;
+  width: 16px;
+  background: url('../img/delete_grey.png');
+}
+
+#weather_main #locations_menu li:hover .delete_icon {
+  visibility: visible;
+}
+
+
+#weather_main #locations_menu li .delete_icon:hover {
+  background: url('../img/delete_black.png');
+}
+
+/* Styling for location search box. */
+#weather_main #weather_box #search_form_container {
+  color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#weather_main #weather_box #search_form_container #location_search {
+  border-bottom: 1px grey dotted;
+}
+
+#weather_main #weather_box #search_form_container #get_weather_button {
+  font-size: 20px;
+  background: #EE3754 url('../img/login_white.png') no-repeat 95% 55%;
+  color: white;
+  padding-right: 40px;
+}
+#weather_main #weather_box #search_form_container #get_weather_button:hover {
+  background: #DC0B2C url('../img/login_white.png') no-repeat 95% 55%;
+}
+
+#weather_main #weather_box #result_location {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Button classes for the "Save Location" button that can toggled. */
+.ui_save_button_default {
+  font-family: 'Lato';
+  font-weight: 300;
+  background: grey url('../img/save_lightgrey.png') no-repeat 5% 55%;;
+  font-size: 20px;
+  color: #F0F0F0;
+  border: 0px;
+  box-shadow: 1px 1px 0px #404040;
+  border-radius: 5px;
+  padding: 0.6%;
+  padding-left: 30px;
+  outline: none;
+}
+
+.ui_save_button_default:hover {
+  background: #9E9E9E url('../img/save_white.png') no-repeat 5% 55%;
+  color: white;
+  outline: none;
+}
+
+.ui_save_button_default:active {
+  outline: none;
+}
+
+.ui_save_button_saved {
+  font-family: 'Lato';
+  font-weight: 300;
+  background: #F44336 url('../img/save_white.png') no-repeat 5% 55%;;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  box-shadow: 1px 1px 0px #404040;
+  border-radius: 5px;
+  padding: 0.6%;
+  padding-left: 30px;
+  outline: none;
+}
+
+.ui_save_button_saved:hover {
+  outline: none;
+}
+
+.ui_save_button_saved:active {
+  outline: none;
+}
+
+/* End button classes for "Save Location" button. */
+
+#weather_main #weather_box #return_button {
+  background: #161616 url('../img/return.png') no-repeat 5% 55%;
+  padding-left: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+
+#weather_main #weather_box #return_button:hover {
+  background: #030202 url('../img/return.png') no-repeat 5% 55%;
+}
+
+.thumb_ico_container {
+  font-family: 'weather';
+}
+
+/* Set up the box where the weather icon is displayed. */
+#icon_box {
+  color: black;
+  font-family: 'weather';
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}

@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+/* Site-wide defaults. */
+#main {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+#main h1 {
+    font-weight: 400;
+}
+
+/* Username input on the index page. */
+#username_box {
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 40px;
+    width: 40%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-bottom: 1px grey dotted;
+}
+
+/* General UI button class. */
+.ui_button {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 30px;
+    border: 0px;
+    box-shadow: 1px 1px 0px #404040;
+    border-radius: 5px;
+    padding: 0.6%;
+    outline: none;
+}
+
+.ui_button:hover {
+    outline: none;
+}
+
+.ui_button:active {
+    outline: none;
+}
+
+/* 'Continue' button on the index page. */
+#submit_button {
+    background: #EE3754 url('login_white.png') no-repeat 95% 55%;
+    color: white;
+    padding-right: 40px;
+}
+#submit_button:hover {
+    background: #DC0B2C url('login_white.png') no-repeat 95% 55%;
+}
+
+/* Button that creates a user on the create user page. */
+#accept_button {
+    background: #3FCE30 url('confirm_icon.png') no-repeat 95% 55%;
+    color: white;
+    padding-right: 40px;
+}
+#accept_button:hover {
+    background: #1ABF09 url('confirm_icon.png') no-repeat 95% 55%;
+}
+
+/* Button that returns a user to the main page on the create user page. */
+#cancel_button {
+    background: #161616 url('cancel_icon.png') no-repeat 97% 55%;
+    color: white;
+    padding-right: 50px;
+}
+#cancel_button:hover {
+    background: #030202 url('cancel_icon.png') no-repeat 97% 55%;
+}

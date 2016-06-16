@@ -1,0 +1,19 @@
+<?php
+
+namespace QuickWeatherDB;
+
+$db_server   = 'localhost';
+$db_user     = 'root';
+$db_password = 'password';
+$db_name     = 'apax';
+
+function connect_to_quickweather_db()
+{
+    try {
+        return (new PDO("mysql:host={$db_server};dbname={$db_name}",
+                        $db_user, $db_pass));
+    }
+    catch(PDOException $ex) {
+        echo $ex->getMessage();
+    }
+}

@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+#main {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+#main h1 {
+    font-weight: 400;
+}
+#username_box {
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 40px;
+    width: 40%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-bottom: 1px grey dotted;
+}     
+#submit_button {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 30px;
+    border: 0px;
+    background: #EE3754 url('login_white.png') no-repeat 95% 55%;
+    box-shadow: 1px 1px 0px #404040;
+    color: white;
+    border-radius: 5px;
+    padding: 0.6%;
+    padding-right: 40px;
+}
+#submit_button:hover {
+    background: #DC0B2C url('login_white.png') no-repeat 95% 55%;
+    color: white;
+    outline: none;
+}
+#submit_button:active {
+    outline: none;
+}
+
+#accept_button {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 30px;
+    border: 0px;
+    background: #3FCE30 url('confirm_icon.png') no-repeat 95% 55%;
+    box-shadow: 1px 1px 0px #404040;
+    color: white;
+    border-radius: 5px;
+    padding: 0.6%;
+    padding-right: 40px;
+}
+#accept_button:hover {
+    background: #1ABF09 url('confirm_icon.png') no-repeat 95% 55%;
+    color: white;
+    outline: none;
+}
+#accept_button:active {
+    outline: none;
+}
+
+#cancel_button {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 30px;
+    border: 0px;
+    background: #161616 url('cancel_icon.png') no-repeat 97% 55%;
+    box-shadow: 1px 1px 0px #404040;
+    color: white;
+    border-radius: 5px;
+    padding: 0.6%;
+    padding-right: 50px;
+}
+#cancel_button:hover {
+    background: #030202 url('cancel_icon.png') no-repeat 97% 55%;
+    color: white;
+    outline: none;
+}
+#cancel_button:active {
+    outline: none;
+
